@@ -20,14 +20,11 @@ const AnimalContainer = () => {
 
 
 
-
-
-
     return (
         <div className="main">
             <title className="header">
                 <Header />
-                <button>Refresh Animal list</button>
+                {/* <button >Refresh Animal list</button> */}
             </title>
             <AnimalSelect className="list" allAnimals={animal} onAnimalClick={onAnimalClick} />
             {selectedAnimal ? <AnimalDetail animal={selectedAnimal} /> : null}
